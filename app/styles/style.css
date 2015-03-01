@@ -1,0 +1,359 @@
+/*------------------------------------*\
+    $CONTENU
+\*------------------------------------*/
+/**
+ * CONTENU.............Vous êtes en train de le lire
+ * RESET...............Réinitialisation des styles par défaut
+ * FONT................Les polices de caractère
+ * ELEMENTS..............Style global de l'application
+ */
+
+
+
+
+
+
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $FONT
+\*------------------------------------*/
+@font-face {
+    font-family: "ITCAvantGardeW04-Book";
+    src: url("fonts/1122878/daa5c000-4e87-40e9-9689-eec7fd2a19e1.eot?#iefix");
+    src: url("fonts/1122878/daa5c000-4e87-40e9-9689-eec7fd2a19e1.eot?#iefix") format("eot"), url("fonts/1122878/e58aa4f4-3fa9-4138-9cc9-712e1955902c.woff") format("woff"), url("fonts/1122878/b335d0cc-8594-4212-a73a-eb2a55d2b008.ttf") format("truetype"), url("fonts/1122878/3fec63b6-5c06-495d-8bad-0555b665ab8e.svg#3fec63b6-5c06-495d-8bad-0555b665ab8e") format("svg");
+}
+@font-face {
+    font-family: "ITCAvantGardeW04-Bold";
+    src: url("fonts/1122872/4440e247-5f11-4b81-81fc-4f2e5a9573ff.eot?#iefix");
+    src: url("fonts/1122872/4440e247-5f11-4b81-81fc-4f2e5a9573ff.eot?#iefix") format("eot"), url("fonts/1122872/b4cf0471-a031-48a8-a02a-0000def6fd87.woff") format("woff"), url("fonts/1122872/67eef87d-0308-420c-99da-8e75af66f09f.ttf") format("truetype"), url("fonts/1122872/91b0afed-75b4-473d-a2ae-04a3679f2a1c.svg#91b0afed-75b4-473d-a2ae-04a3679f2a1c") format("svg");
+}
+
+
+
+
+
+/*------------------------------------*\
+    $ELEMENTS
+\*------------------------------------*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'ITCAvantGardeW04-Book';
+    height: 100%;
+}
+
+section {
+    position: relative;
+    overflow-y: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+b {
+    font-family: 'ITCAvantGardeW04-Bold';
+    font-weight: normal;
+}
+
+h3 {
+    color: #002ADF;
+}
+
+hr {
+    border-color: #999;
+    border-top: none;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    display: inline;
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+    $OBJET ET ABSTRACTION
+\*------------------------------------*/
+
+.clearfix {
+    clear: both;
+}
+
+.left {
+
+    display: inline-block;
+    float: left;
+}
+
+.right {
+    display: inline-block;
+    float: right;
+}
+
+.wrap {
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w33 {
+    width: 33%;
+    min-width: 200px;
+    display: inline-block;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    display: inline-block;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 0;
+}
+
+.icon-30 {
+    height: 30px;
+}
+
+.title {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10%;
+    width: 73%;
+}
+
+.text {
+    padding-top: 10%;
+
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+    $COMPOSANTS
+\*------------------------------------*/
+
+.view-content {
+    height: 100%;
+    overflow: hidden;
+}
+
+.app-container {
+    height: 100%;
+}
+
+.panel-container {
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.map-container {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.angular-google-map-container {
+    height: 100%;
+}
+
+.angular-google-map {
+    height: 100%;
+}
+
+.minimap {
+    width: 35%;
+}
+
+.panel-header {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.close-panel {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+}
+
+.fly-category-icon {
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    display: block;
+}
+
+.panel-header h1 {
+    text-align: center;
+}
+
+.ico {
+    height: 35px;
+    vertical-align: middle;
+}
+
+.panel-header .coords {
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.panel-header .coords div {
+    margin-bottom: -5px;
+}
+
+.panel-content {
+    width: 100%;
+    text-align: center;
+    background-color: #F2F2F2;
+    padding: 10px 5px;
+}
+
+section.parallax-window img {
+    width: 100%;
+    z-index: -1;
+}
+
+.btn-newfly {
+    height: 30px;
+    width: 110px;
+    z-index: 3;
+    background-color: #ECF0EF;
+    color: #0000ff;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -55px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 0px #b4b4b4;
+    padding-top: 2px;
+    font-size: 15px;
+    border-style: none;
+}
+
+.btn-newfly strong {
+    vertical-align: bottom;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.left-panel .header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    $LEFT PANEL
+\*------------------------------------*/
+
+.left-panel {
+    background-color: #323A45;
+    position: relative;
+    height: 100%;
+    color: #FFFFFF;
+    padding: 0;
+    display: inline-block;
+    width: 15%;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.left-panel .header {
+    text-align: center;
+    padding: 30px;
+}
+.left-panel .main-menu button {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid #555555 2px;
+    color: #555555;
+}
+
+.left-panel .main-menu button:hover {
+    color: #FFFFFF;
+    background-color: #555555;
+}
+
+.left-panel .main-menu button:first-child {
+    border-top: solid #555555 2px;
+}

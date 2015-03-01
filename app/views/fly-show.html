@@ -1,0 +1,59 @@
+<section id="flyshow-panel" class="panel">
+    <div class="row">
+        <div class="col">
+            <img class="icon" src="images/icones-27.png"/>48,3615
+            <br>
+            <img class="icon" src="images/icones-26.png"/>Esbly 23KM
+        </div>
+        <div class="col">
+            <img class="icon center-block" src="images/marker_monument.png"/>
+
+            <p class="textcenter">ZONE TEXT 1</p>
+
+            <p class="textcenter">Ajouté par Marc Degranjean</p>
+        </div>
+        <div class="col center-block ">
+            <a class="btnslec" href="#retenir" role="button" class="" data-toggle="modal">
+                <img class="icon" src="images/icones-25.png">Retenir</a>
+
+            <a class="btnslec" href="#retenir" role="button" class="" data-toggle="modal">
+                <img class="icon" src="images/icones-25.png">Enrichir</a>
+        </div>
+    </div>
+    <div id="flymid">
+        <div class="row">
+            <div class="procomit">
+                <div class=" center-block">
+                    <img style="float:left;" class="imgpro icon spaceimgtop" src="images/panda.jpg">
+                    <p class="procommit">Join team flyaround bro PHP IS GREAT</p>
+                </div>
+            </div>
+        </div>
+        <ul rn-carousel rn-carousel-buffered class="flylist-carousel">
+            <li ng-repeat="slide in slides track by slide.id">
+                <div ng-style="{'background-image': 'url(' + slide.img + ')'}"  class="bgimage">
+                    #{{ slide.id }}
+                </div>
+            </li>
+        </ul>
+        <div class="row">
+            <div id="flycommit">
+                <div class=" center-block">
+                    <a class="btnslec2" style="float:right;" href="#retenir" role="button" class="" data-toggle="modal">
+                        <img class="icon" src="images/icones-25.png">Enrichir</a>
+                    <img style="float:left;" class="imgpro icon spaceimgtop" src="images/panda.jpg">
+                    <a href="#"><p class="flypidname">JEAN JACK</p></a>
+                    <div class="flycommitfont">
+                        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis</p>
+                    </div>
+                </div>
+                <br>
+                <img style="float:left;" class="imgpro icon spaceimgtop" src="images/panda.jpg">
+                <a href="#"><p class="flypidname">Robert</p></a>
+                <div class="flycommitfont">
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

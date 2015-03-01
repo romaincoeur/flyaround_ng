@@ -1,0 +1,50 @@
+<div class="app-container" ng-controller="PanelController as panel">
+    <aside class="left-panel">
+        <div class="header">
+            <img id="profilpic" src="images/panda.jpg" alt="photo profil">
+            <br>
+            <div class="name">{{ username }}</div>
+            <hr>
+            <div class="description">Pilote chez Air France</div>
+            <div class="city">
+                <strong>Paris</strong>
+            </div>
+        </div>
+        <div class="main-menu">
+            <button ng-click="panel.select('flylist')" ng-class="{ active:panel.isSelected('flylist') }">MA FLY'LIST</button>
+            <button ng-click="panel.select('myadds')" ng-class="{ active:panel.isSelected('myadds') }">MES AJOUTS</button>
+            <button ng-click="panel.select('profile')" ng-class="{ active:panel.isSelected('profile') }">MON PROFIL</button>
+        </div>
+    </aside><!--
+
+--><div class="panel-container" ng-show="panel.panelMode">
+    <flylist ng-show="panel.isSelected('flylist')"></flylist>
+    <fly-show ng-show="panel.isSelected('flyshow')"></fly-show>
+    <new-fly ng-show="panel.isSelected('newfly')"></new-fly>
+</div><!--
+
+--><div class="map-container" ng-class="{minimap: panel.panelMode}" ng-controller="MapController">
+    <ui-gmap-google-map center='map.center' zoom='map.zoom' options='map.options'>
+        <ui-gmap-markers
+                models="flies"
+                coords="'self'"
+                icon="'icon'"
+                click="onMarkerClicked"
+                >
+        </ui-gmap-markers>
+        <ui-gmap-markers
+                models="terrains"
+                coords="'self'"
+                icon="'icon'"
+                doCluster="true"
+                clusterOptions="clusterOptions">
+        </ui-gmap-markers>
+    </ui-gmap-google-map>
+    <button ng-click="panel.select('newfly')" class="btn-newfly" ng-class="{cancel: panel.isSelected('newfly')}" id="newfly-button">
+        <img src="images/sites-ajoutes-24.png" class="icon-30" ng-hide="panel.isSelected('newfly')"/>
+        <img src="images/icones-59.png" class="icon-30" ng-show="panel.isSelected('newfly')"/>
+        <strong ng-hide="panel.isSelected('newfly')">ajouter</strong>
+        <strong ng-show="panel.isSelected('newfly')">annuler</strong>
+    </button>
+</div>
+</div>

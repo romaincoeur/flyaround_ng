@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <button ng-click="closeModal()" class="close">×</button>
+    <h3 id="myModalLabel">Connexion</h3>
+</div>
+<div class="modal-body" style="text-align:center">
+    <form name="connectionForm" ng-submit="signin()">
+        <label for="username" id="usertext">Nom d'utilisateur</label>
+        <br>
+        <input type="text" id="username" name="_username" required ng-model="connection.username"/>
+        <br>
+
+        <label for="password" id="passtext">Mot de passe</label>
+        <br>
+        <input type="password" id="password" name="_password" required ng-model="connection.password" />
+        <br>
+
+        <input type="checkbox" id="remember_me" name="_remember_me" value="on" ng-model="connection.remember"/>
+        <label for="remember_me">Se souvenir de moi</label>
+        <br>
+        <input type="submit" value="Connexion" />
+    </form>
+</div>

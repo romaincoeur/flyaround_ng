@@ -1,0 +1,472 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/*------------------------------------*\
+    $FONT
+\*------------------------------------*/
+@font-face {
+  font-family: "ITCAvantGardeW04-Book";
+  src: url("fonts/1122878/daa5c000-4e87-40e9-9689-eec7fd2a19e1.eot?#iefix");
+  src: url("fonts/1122878/daa5c000-4e87-40e9-9689-eec7fd2a19e1.eot?#iefix") format("eot"), url("fonts/1122878/e58aa4f4-3fa9-4138-9cc9-712e1955902c.woff") format("woff"), url("fonts/1122878/b335d0cc-8594-4212-a73a-eb2a55d2b008.ttf") format("truetype"), url("fonts/1122878/3fec63b6-5c06-495d-8bad-0555b665ab8e.svg#3fec63b6-5c06-495d-8bad-0555b665ab8e") format("svg");
+}
+@font-face {
+  font-family: "ITCAvantGardeW04-Bold";
+  src: url("fonts/1122872/4440e247-5f11-4b81-81fc-4f2e5a9573ff.eot?#iefix");
+  src: url("fonts/1122872/4440e247-5f11-4b81-81fc-4f2e5a9573ff.eot?#iefix") format("eot"), url("fonts/1122872/b4cf0471-a031-48a8-a02a-0000def6fd87.woff") format("woff"), url("fonts/1122872/67eef87d-0308-420c-99da-8e75af66f09f.ttf") format("truetype"), url("fonts/1122872/91b0afed-75b4-473d-a2ae-04a3679f2a1c.svg#91b0afed-75b4-473d-a2ae-04a3679f2a1c") format("svg");
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+    $ELEMENTS
+\*------------------------------------*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'ITCAvantGardeW04-Book';
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  display: inline-block;
+  max-width: 40px;
+  max-height: 40px;
+  padding: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.left {
+
+  display: inline-block;
+  float: left;
+}
+
+.right {
+  display: inline-block;
+  float: right;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+b {
+  font-family: 'ITCAvantGardeW04-Bold';
+  font-weight: normal;
+}
+
+.wrap {
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w33 {
+  width: 33%;
+  min-width: 200px;
+  display: inline-block;
+}
+
+h3 {
+  color: #002ADF;
+}
+
+hr {
+  border-color: #999;
+  border-top: none;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  display: inline;
+}
+
+.map-container {
+  width: 75%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.view-container[name="menuContent"] {
+  position: relative;
+  display: inline-block;
+  width: 45%;
+  margin-left: -45%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+    $OBJET ET ABSTRACTION
+\*------------------------------------*/
+
+.title {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10%;
+  width: 73%;
+}
+
+.text {
+  padding-top: 10%;
+
+}
+
+#progressbar {
+  margin-top: 50%;
+}
+
+.btn-newfly {
+  height: 30px;
+  width: 110px;
+  z-index: 3;
+  background-color: #ECF0EF;
+  color: #0000ff;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -55px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 5px 0px #b4b4b4;
+  padding-top: 2px;
+  font-size: 10px;
+  border-style: none;
+}
+
+.left-panel .header img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $COMPOSANTS
+\*------------------------------------*/
+
+.panel-header {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.close-panel {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+}
+
+.fly-category-icon {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  display: block;
+}
+
+.panel-header h1 {
+  text-align: center;
+}
+
+.ico {
+  height: 35px;
+  vertical-align: middle;
+}
+
+.panel-header .coords {
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+.panel-header .coords div {
+  margin-bottom: -5px;
+}
+
+.panel-content {
+  width: 100%;
+  text-align: center;
+  background-color: #F2F2F2;
+  padding: 10px 5px;
+}
+
+
+
+
+
+
+
+/*custom.css*/
+
+#first
+{
+  height:400px;
+  background-color:#ecf0ef;
+}
+
+#firstbis
+{
+  width:300px;
+  padding-top:50px;
+  margin:auto;
+}
+
+#logo1
+{
+  width:250px;
+  height:auto;
+  position:absolute;
+  margin-top:50px;
+  margin-left:100px;
+}
+
+.buttonlog
+{
+  height:30px;
+  width:200px;
+  background-color:#FFFFFF;
+  border-radius:10px;
+  font-size:12px;
+}
+
+.buttonlog img
+{
+  height:30px;
+  width:30px;
+}
+
+.buttonlog p
+{
+  position:absolute;
+  display:inline;
+  margin-top:5px;
+  margin-left:5px;
+}
+
+#desc1
+{
+  position:absolute;
+  margin-top:-300px;
+  height:auto;
+  width:400px;
+  margin-left:350px;
+}
+
+#second, #four, #seven
+{
+  height:450px;
+}
+
+#back1
+{
+  width:100%;
+  height:100%;
+}
+
+#third
+{
+  height:400px;
+  background-color:#ecf0ef;
+}
+
+#thirdbis
+{
+  width:300px;
+  padding-top:50px;
+  margin:auto;
+  padding-left:50px;
+}
+
+#desc2
+{
+  width:400px;
+  height:auto;
+  position:absolute;
+  margin-top:100px;
+  margin-left:100px;
+}
+
+#plane2
+{
+  width:250px;
+  height:auto;
+  position:absolute;
+  margin-top:-300px;
+  margin-left:400px;
+}
+
+#second
+{
+  height:450px;
+}
+
+#back2
+{
+  width:100%;
+  height:100%;
+}
+
+#fifth
+{
+  height:400px;
+  background-color:#ecf0ef;
+}
+
+#plane3
+{
+  width:250px;
+  height:auto;
+  position:absolute;
+  margin-top:50px;
+  margin-left:100px;
+}
+
+#fifthbis
+{
+  width:300px;
+  padding-top:50px;
+  margin:auto;
+}
+
+#desc3
+{
+  width:400px;
+  height:auto;
+  position:absolute;
+  margin-top:-225px;
+  margin-left:66%;
+}
+
+#six
+{
+  height:450px;
+  background-color:#ecf0ef;
+}
+
+#desc4
+{
+  width:400px;
+  height:auto;
+  position:absolute;
+  margin-top:100px;
+  margin-left:100px;
+}
+
+#sixbis
+{
+  width:300px;
+  padding-top:50px;
+  margin:auto;
+  padding-left:50px;
+}
+
+.buttonlogbis
+{
+  height:30px;
+  width:100px;
+  background-color:#FFFFFF;
+  border-radius:10px;
+  font-size:12px;
+}
+
+.buttonlogbis img
+{
+  height:30px;
+  width:30px;
+}
+
+.buttonlogbis p
+{
+  position:absolute;
+  display:inline;
+  margin-top:5px;
+  margin-left:5px;
+}
+
+#plane4
+{
+  width:250px;
+  height:auto;
+  position:absolute;
+  margin-top:-250px;
+  margin-left:350px;
+}
+
+#back3
+{
+  width:100%;
+  height:100%;
+}
+
+#password
+{
+  width:50%;;
+}
+
+#username
+{
+  width:50%;;
+}
+
+#passtext
+{
+  color:#002ADF;
+}
+
+#usertext
+{
+  color:#002ADF;
+}
+
+.regist
+{
+  height:100%;
+  width:100%;
+  text-align:center;
+}
+
+.registsub
+{
+  height:100%;
+  width:100%;
+  text-align:center;
+}
+
+.setcol
+{
+  color:#002ADF;
+}

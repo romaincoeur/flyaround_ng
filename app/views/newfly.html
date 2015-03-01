@@ -1,0 +1,44 @@
+<section id="flylist-panel" class="panel">
+    <form name="newFlyForm" >
+        <div>
+            <img src="images/icones-51.png" class="headImg"/>
+
+            <div id="flyaround_mapbundle_fly">
+                <div>
+                    <label for="flyaround_mapbundle_fly_name" class="required"></label>
+                    <input type="text" id="flyaround_mapbundle_fly_name" class="flyaround_mapbundle_fly_name" name="flyaround_mapbundle_fly[name]" required="required" maxlength="255" placeholder="Titre" />
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label for="flyaround_mapbundle_fly_description" class="required"></label>
+            <textarea id="flyaround_mapbundle_fly_description" name="flyaround_mapbundle_fly[description]" required="required" placeholder="Décris ton intérêt pour ce site"></textarea>
+        </div>
+
+        <div class="containerTest">
+            <div id="flyaround_mapbundle_fly_sendimg">
+                <img src="images/icones-24.png" class="photoImg"/>
+                <p class="textSpace">Clique sur le bouton çi-dessous pour</p>
+                <input type="file" class="sendImg">
+                <!--<img src="{{ asset ('bundles/flyaroundmap/img/icones-60.png') }}" class="buttonImg"/>
+                <strong class="textSpace">Télécharge</strong>-->
+                </button>
+                <p class="textSpace">l'image depuis ton ordinateur</p>
+            </div>
+
+            <div>
+                <label for="flyaround_mapbundle_fly_category" class="required" id="flyaround_mapbundle_fly_category">Categories:</label>
+                <select id="flyaround_mapbundle_fly_category" name="flyaround_mapbundle_fly[category]">
+                    <option value="bridge">Ouvrage d&#039;art</option>
+                    <option value="monument">Monument historique</option>
+                    <option value="panorama">Paysage</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" value="Submit" class="validatebuttonimg">
+            <img src="images/icones-55.png" class="buttonImg"/>
+            <strong>Valider</strong>
+        </button>
+    </form>
+</section>

@@ -1,0 +1,240 @@
+
+
+<header class="homepage" ng-controller="ModalController">
+    <div class="left">
+
+        <a href="https://www.facebook.com/pages/Flyaround/541389942601829" target="_blank">
+            <img class="icon" src="images/icon-fb.png" alt="facebook" ></a>
+
+        <a href="#"><img class="icon" src="images/reseau-social-96.png" alt="email"></a>
+
+        <a href="https://twitter.com/FlyaroundFR" target="_blank">
+            <img class="icon" src="images/icon-twitter.png" alt="twitter"></a>
+
+        <a href="#" target="_blank"><img class="icon" src="images/reseau-social-94.png" alt=""></a>
+
+    </div>
+    <div class="right">
+        <button class="user-btn" ng-click="openRegisterModal()">
+            <img class="icon" src="images/connexion.png" alt="logo de Flyaround">
+            inscription
+        </button>
+
+        <button class="user-btn" ng-click="openConnectionModal()">
+            <img class="icon" src="images/cadenas.png" alt="separateur">
+            connexion
+        </button>
+    </div>
+    <div class="clearfix"></div>
+</header>
+
+<section id="bg">
+    <img style="width:100%;height:auto;" src="images/calvi.png">
+    <div class="logo_centre">
+        <a href="#">
+            <img class="logo" src="images/logo-white.png" alt="logo de Flyaround" width="230px">
+            <h1><b>fly</b>around</h1>
+        </a>
+        <h2>survoler, découvrir, partager</h2>
+    </div>
+</section>
+
+<section id="first">
+    <img id="logo1" src="images/plane.png">
+    <div id="firstbis">
+        <p><strong>Survoler les plus beaux sites de France</strong></p>
+        <p><strong>____________________</strong></p>
+        <br>
+        <p>Flyarround est une carte interactive enrichies par les utilisateurs du site.Grâce à Flyarround, découvrez autour de votre point d'envol, les plus beaux sites à voir classés par catégories</p>
+        <br>
+        <div class="buttonlog">
+            <img src="images/icones-84.png">
+            <a href="#register" role="button" class="" data-toggle="modal"><p><strong>s'inscrire et s'envoler...</strong></p></a>
+        </div>
+        <img id="desc1" src="images/desc1.png">
+    </div>
+</section>
+
+<section id="second" ng-controller="HomeController" class="parallax-window">
+    <img src="images/back1.png" du-parallax y="background" alt="">
+</section>
+
+<section id="third">
+    <img id="desc2" src="images/desc2.png">
+    <div id="thirdbis">
+        <p><strong>Découvrir de nouveaux sites</strong></p>
+        <p><strong>____________________</strong></p>
+        <br>
+        <p>Avec Flyaround, découvre de nouveaux sites. Ajoutes-les à ta Flylist pour les retenirs et aller les survoler lors de ton prochain vol. Ajoute une région ou les alentours d'un terrain pour être avertis lors de la création d'un nouveau site.</p>
+        <br>
+        <div class="buttonlog">
+            <img src="images/boussole.png">
+            <a href="#register" role="button" class="" data-toggle="modal"><p><strong>s'inscrire et découvrir...</strong></p></a>
+        </div>
+        <img id="plane2" src="images/plane2.png">
+    </div>
+</section>
+
+<section id="four" ng-controller="HomeController" class="parallax-window">
+    <img src="images/back2.png" du-parallax y="background" alt="">
+</section>
+
+<section id="fifth">
+    <img id="plane3" src="images/plane3.png">
+    <div id="fifthbis">
+        <p><strong>Survoler les plus beaux sites de France</strong></p>
+        <p><strong>____________________</strong></p>
+        <br>
+        <p>Flyaround est une carte interactive enrichies par les utilisateurs du site.Grâce à Flyarround, découvrez autour de votre point d'envol, les plus beaux sites à voir classés par catégories</p>
+        <br>
+        <div class="buttonlog">
+            <img src="images/ajouter-site.png">
+            <a href="#register" role="button" class="" data-toggle="modal"><p><strong>s'inscrire et enrichir...</strong></p></a>
+        </div>
+    </div>
+    <img id="desc3" src="images/desc3.png">
+</section>
+
+<section id="six">
+    <img id="desc4" src="images/desc4.png">
+    <div id="sixbis">
+        <p><strong>Survoler les plus beaux sites de France</strong></p>
+        <p><strong>____________________</strong></p>
+        <br>
+        <p>Flyaround est une carte interactive enrichies par les utilisateurs du site.Grâce à Flyarround, découvrez autour de votre point d'envol, les plus beaux sites à voir classés par catégories</p>
+        <br>
+        <div class="buttonlogbis">
+            <img src="images/connexion.png">
+            <a href="#register" role="button" class="" data-toggle="modal"><p><strong>s'inscrire</strong></p></a>
+            <img id="plane4" src="images/plane4.png">
+        </div>
+    </div>
+</section>
+
+<section id="seven" ng-controller="HomeController" class="parallax-window">
+    <img src="images/back3.png" du-parallax y="background" alt="">
+</section>
+
+<section id="suggestions" class="bg-grey">
+    <div id="controls">
+        <div class="left">
+            <div>
+                <img class="icon" src="images/sites-ajoutes.png" alt="sites-ajoutes">
+                Les derniers sites ajoutés
+            </div>
+            <a href="#connexion" role="button" class="" data-toggle="modal">
+                <div>
+                    <img class="icon" src="images/ajouter-site.png" alt="ajouter-site" style="margin-left: 10px;">
+                    Ajouter un site
+                </div>
+            </a>
+        </div>
+        <div class="right">
+            <img class="btn icon" id="left-arrow" src="images/left-arrow.png" alt="left-arrow">
+            <img class="btn icon" id="right-arrow" src="images/right-arrow.png" alt="right-arrow" style="margin-left: 20px;">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="sites" class="carousel">
+        <a href="#">
+            <div class="thumbnail">
+                <img class="miniature" src="images/corse4.jpg" alt="corse">
+                Calanques corses
+                <hr>
+                <img class="icon" src="images/geotheme-nature.png" alt="icon nature">
+            </div>
+        </a>
+        <a href="#">
+            <div class="thumbnail">
+                <img class="miniature" src="images/millau.jpg" alt="corse">
+                Viaduc de Millau
+                <hr>
+                <img class="icon" src="images/geotheme-infrastructure.png" alt="icon nature">
+            </div>
+        </a>
+        <a href="#">
+            <div class="thumbnail">
+                <img class="miniature" src="images/chateau.jpg" alt="corse">
+                Chateau de Chambord
+                <hr>
+                <img class="icon" src="images/geotheme-site-classe.png" alt="icon nature">
+            </div>
+        </a>
+        <a href="#">
+            <div class="thumbnail">
+                <img class="miniature" src="images/fribourg.jpg" alt="corse">
+                Fribourg
+                <hr>
+                <img class="icon" src="images/geotheme-site-classe.png" alt="icon nature">
+            </div>
+        </a>
+        <a href="#">
+            <div class="thumbnail">
+                <img class="miniature" src="images/corse4.jpg" alt="corse">
+                Calanques corses
+                <hr>
+                <img class="icon" src="images/geotheme-nature.png" alt="icon nature">
+            </div>
+        </a>
+        <a href="#">
+            <div class="thumbnail">
+                <img class="miniature" src="images/millau.jpg" alt="corse">
+                Viaduc de Millau
+                <hr>
+                <img class="icon" src="images/geotheme-infrastructure.png" alt="icon nature">
+            </div>
+        </a>
+        <a href="#">
+            <div class="thumbnail">
+                <img class="miniature" src="images/chateau.jpg" alt="corse">
+                Chateau de Chambord
+                <hr>
+                <img class="icon" src="images/geotheme-site-classe.png" alt="icon nature">
+            </div>
+        </a>
+        <a href="#">
+            <div class="thumbnail">
+                <img class="miniature" src="images/fribourg.jpg" alt="corse">
+                Fribourg
+                <hr>
+                <img class="icon" src="images/geotheme-site-classe.png" alt="icon nature">
+            </div>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <div class="center">
+        <div class="w33">
+            <div class="left" style="width: 350px; margin-left: 30px;">
+                <img class="logo" src="images/logo-white.png"
+                     alt="logo de Flyaround" width="100px">
+
+                <h2 style="font-size: 28px;"><b style="font-size: 30px;">fly</b>around</h2>
+            </div>
+        </div>
+        <div class="w33 borders">
+            <div class="center" style="width: 360px">
+                <p>
+                    "Vous souhaitez nous poser des questions, nous dire que flyaround vous ravit
+                    ou simplement dire bonjour ? N'hésitez pas à nous contacter ou retrouver nous
+                    sur Facebook et Twitter"
+                </p>
+            </div>
+        </div>
+        <div class="w33">
+            <div class="right" style="width: 300px; margin-right: 70px;">
+                <a href="#">
+                    <img class="big-icon" src="images/icon-email.png" alt="email">
+                </a>
+                <a href="https://www.facebook.com/pages/Flyaround/541389942601829" target="_blank">
+                    <img class="big-icon" src="images/icon-fb.png" alt="facebook" style="margin: 0 70px;">
+                </a>
+                <a href="https://twitter.com/FlyaroundFR" target="_blank">
+                    <img class="big-icon" src="images/icon-twitter.png" alt="twitter">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
